@@ -4,12 +4,16 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func Start() {
+type Testobj struct {
+	Rhandler RestHandler
+}
+
+func (t *Testobj) Start() {
 	gin.ForceConsoleColor()
 	gin.SetMode(gin.ReleaseMode)
 	r := gin.Default()
 
-	RegisterRouters(r)
+	t.Rhandler.RegisterRouters(r)
 	//监听端口默认为8080
-	r.Run(":8000")
+	r.Run(":8080")
 }

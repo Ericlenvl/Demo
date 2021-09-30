@@ -5,10 +5,10 @@ require (
 	github.com/go-ini/ini v1.62.0
 	github.com/go-sql-driver/mysql v1.5.0
 	github.com/golang/snappy v0.0.0-20180518054509-2e65f85255db // indirect
+	github.com/google/wire v0.5.0
 	github.com/syndtr/goleveldb v1.0.0 // indirect
 	xorm.io/builder v0.3.7 // indirect
 	xorm.io/xorm v1.0.6
-//github.com/google/wire v0.0.0
 )
 
 require (

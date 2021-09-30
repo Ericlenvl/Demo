@@ -1,3 +1,11 @@
 package main
 
-func Init
+import (
+	"github.com/google/wire"
+	"hxj/initials"
+)
+
+func NewMigrationJob() error {
+	wire.Build(initials.NewDB())
+	return nil
+}
